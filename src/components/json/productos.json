@@ -1,0 +1,11 @@
+[
+    {"idx":1, "titulo":"Mónaco Grey", "imagen":"img/monaco.jpg", "precio":24000, "categoria":"outlet", "stock":10},
+    {"idx":2, "titulo":"Tulum Pink", "imagen":"img/tulum.jpg", "precio":23799, "categoria":"outlet", "stock":10},
+    {"idx":3, "titulo":"Paris Blue", "imagen":"img/paris.jpg", "precio":22900, "categoria":"outlet", "stock":10},
+    {"idx":4, "titulo":"Cherry Purple", "imagen":"img/cherry.jpg", "precio":45990, "categoria":"sun", "stock":10},
+    {"idx":5, "titulo":"Space Brown", "imagen":"img/space.jpg", "precio":40000, "categoria":"sun", "stock":10},
+    {"idx":6, "titulo":"Montana Blue", "imagen":"img/montana.jpg", "precio":52200, "categoria":"sun", "stock":10},
+    {"idx":7, "titulo":"Ruby Sky Blue", "imagen":"img/ruby.jpg", "precio":62000, "categoria":"optical", "stock":10},
+    {"idx":8, "titulo":"Honey Yellow", "imagen":"img/honey.jpg", "precio":64560, "categoria":"optical", "stock":10},
+    {"idx":9, "titulo":"Frida Pink", "imagen":"img/frida.jpg", "precio":68000, "categoria":"optical", "stock":10}
+]
