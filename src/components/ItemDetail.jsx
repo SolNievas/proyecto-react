@@ -16,6 +16,7 @@ const ItemDetail = ({producto}) => {
                 </div>
                 <div className="col-md-5">
                     <h1>{item.titulo}</h1>
+                    <p>{item.descripcion}</p>
                     <p><b>${item.precio}</b></p>
                     <ItemCount stock={item.stock} />
                 </div>

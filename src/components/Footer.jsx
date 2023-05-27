@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom";
-
 const Footer = () => {
     return (
         <div className="container-fluid text-dark bg-warning py-5">
