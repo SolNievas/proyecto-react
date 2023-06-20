@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import ItemCount from "./ItemCount";
+import {CartContext} from "./context/CartContext";
 
 const ItemDetail = ({producto}) => {
     const [item, setItem] = useState({});
