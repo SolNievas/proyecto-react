@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className="container-fluid">
            <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to={"#"}>TIENDA EYEWEAR</NavLink>
+                    <NavLink className="navbar-brand" to={"/"}>TIENDA EYEWEAR</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
