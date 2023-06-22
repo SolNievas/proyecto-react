@@ -1,5 +1,6 @@
 import {useContext} from "react";
 import {CartContext} from "./context/CartContext";
+import {Link} from "react-router-dom";
 import trash from "./img/trash.svg";
 
 const Cart = () => {
@@ -36,10 +37,10 @@ const Cart = () => {
                                 cart.map(item => (
                                     <tr key={item.id}>
                                         <td><img src={item.imagen} alt={item.titulo} width={80} /></td>
-                                        <td>{item.titulo}</td>
-                                        <td>{item.cantidad} x ${item.precio}</td>
-                                        <td className="text-center">${item.cantidad * item.precio}</td>
-                                        <td className="text-end"><button className="btn btn-light" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={trash} alt="Eliminar Producto" width={32} /></button></td>
+                                        <td className="align-middle">{item.titulo}</td>
+                                        <td className="align-middle">{item.cantidad} x ${item.precio}</td>
+                                        <td className="align-middle text-center">${item.cantidad * item.precio}</td>
+                                        <td className="align-middle text-end"><button className="btn btn-light" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={trash} alt="Eliminar Producto" width={24} /></button></td>
                                     </tr>
                                 ))
                             }

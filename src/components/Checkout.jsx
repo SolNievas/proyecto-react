@@ -1,6 +1,7 @@
 import {useContext, useState} from "react";
 import {CartContext} from "./context/CartContext";
-import {addDoc, collection, doc, getFirestore, updateDoc, writeBatch} from "firebase/firestore";
+import {addDoc, collection, getFirestore} from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
     const [nombre, setNombre] = useState("");
@@ -80,13 +81,10 @@ const Checkout = () => {
                         </tbody>
                     </table>
                 </div>
-            </div>
             <div className="row my-5">
-                <div className="col text-center">
-                    {orderId ? <div className="alert alert-warning" role="alert">
-                        <h1 className="fs-1 text">Gracias por tu Compra!</h1>
-                        <p>Tu Orden de Compra es: <b>{orderId}</b></p>
-                    </div> : ""}
+                    <div className="col text-center">
+                        {orderId ? <Navigate to={"/gracias" + orderId} /> : ""}
+                    </div>
                 </div>
             </div>
         </div>
