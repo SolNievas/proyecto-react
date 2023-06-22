@@ -1,7 +1,7 @@
 import {useContext, useState} from "react";
 import {CartContext} from "./context/CartContext";
 import {addDoc, collection, getFirestore} from "firebase/firestore";
-import { Navigate } from "react-router-dom";
+import {Navigate} from "react-router-dom";
 
 const Checkout = () => {
     const [nombre, setNombre] = useState("");
@@ -36,7 +36,7 @@ const Checkout = () => {
             setOrderId(resultado.id);
         })
         .catch(resultado => {
-            console.log("Error! No se pudo completar la compra!");
+            console.log("Error! No fue posible procesar la compra");
         });
 
     }

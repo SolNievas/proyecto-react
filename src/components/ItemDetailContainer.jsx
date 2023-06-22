@@ -7,13 +7,13 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
     const {id} = useParams();
 
-    useEffect(() => {
+     useEffect(() => {
         const db = getFirestore();
         const producto = doc(db, "items", id);
         getDoc(producto).then(resultado => {setItem ({id:resultado.id, ...resultado.data()})
         });
 
-    }, [id])
+    }, [id]) 
 
     return (
         <>
