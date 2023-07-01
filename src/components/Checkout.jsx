@@ -83,7 +83,7 @@ const Checkout = () => {
                 </div>
             <div className="row my-5">
                     <div className="col text-center">
-                        {orderId ? <Navigate to={"/gracias" + orderId} /> : ""}
+                        {orderId ? <Navigate to={"/gracias/" + orderId} /> : ""}
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ const Gracias = () => {
     <div className="container my-5">
       <div className="row">
         <div className="col text-center">
-          <div className="alert alert-danger p-5" role="alert">
+          <div className="alert alert-warning p-5" role="alert">
             <h1 className="fs-1 text">Gracias por tu Compra!</h1>
             <p>Tu Orden de Compra es: <b>{orderId}</b></p>
             <p>

@@ -31,7 +31,7 @@ const Cart = () => {
                         <tbody>
                             <tr>
                                 <td colSpan={4}>&nbsp;</td>
-                                <td className="text-end"><button className="btn btn-light" onClick={() => {clear()}} title="Vaciar Carrito">Vaciar Carrito</button></td>
+                                <td className="text-end"><button className="btn btn-warning" onClick={() => {clear()}} title="Vaciar Carrito">Vaciar Carrito</button></td>
                             </tr>
                             {
                                 cart.map(item => (
@@ -47,7 +47,7 @@ const Cart = () => {
                             <tr>
                                 <td colSpan={3} className="text-end">Total a Pagar</td>
                                 <td className="text-center">${sumTotal()}</td>
-                                <td className="align-middle text-end"><Link to={"/checkout"} className="btn btn-light">Finalizar Compra</Link></td>
+                                <td className="align-middle text-end"><Link to={"/checkout"} className="btn btn-warning">Finalizar Compra</Link></td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
